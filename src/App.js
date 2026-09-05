@@ -484,7 +484,7 @@ function App() {
                         <div className="invitation-content">
 
                             <h1 className="groom-name">
-                                Doniyor
+                                Mubiyn
                             </h1>
 
                             <div className="and">
@@ -494,7 +494,7 @@ function App() {
                             </div>
 
                             <h1 className="bride-name">
-                                Robiyaxon
+                                Aziza
                             </h1>
 
                             <div className="parents">
@@ -515,7 +515,7 @@ function App() {
 
                             </div>
 
-
+cd
                             <p className="invitation-text">
                                 Hayotimizning eng go‘zal kunida
                                 <br />
@@ -837,9 +837,9 @@ function App() {
                             </p>
 
                             <h2 className="footer-names">
-                                Doniyor
+                                Mubiyn
                                 <span>&amp;</span>
-                                Robiyaxon
+                                Aziza
                             </h2>
 
                             <div className="footer-date">
@@ -857,7 +857,12 @@ function App() {
                                 <br />
                                 sizni yonimizda ko‘rishdan
                                 <br />
-                                mamnun bo‘lamiz
+                                mamnun bo‘lamiz.
+                            </p>
+                            <p className="footer-message1">
+                                Hurmat va ehtirom ila
+                                <br />
+                             Melikulovlar oilasi!
                             </p>
 
                             <div className="footer-heart">
