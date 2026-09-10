@@ -392,7 +392,7 @@ function App() {
                     <section className="invitation">
 
                         <img
-                            src="/invitation.png"
+                            src="/first.png"
                             alt="To'y taklifnomasi"
                             className="invitation-image"
                         />
@@ -477,45 +477,40 @@ function App() {
 
                         <img
                             src="/image_transparent.png"
-                            alt="Doniyor & Robiyaxon"
+                            alt="Mubiyn & Aziza"
                             className="invitation-image"
                         />
 
                         <div className="invitation-content">
 
+                            {/* KUYOV */}
                             <h1 className="groom-name">
-                                Mubiyn
+                                <span className="first-letter">M</span>ubiyn
                             </h1>
 
+                            {/* AND */}
                             <div className="and">
                                 <span></span>
-                                <em>And</em>
+
+                                <em>and</em>
+
                                 <span></span>
                             </div>
 
+                            {/* KELIN */}
                             <h1 className="bride-name">
-                                Aziza
+                                <span className="first-letter">A</span>ziza
                             </h1>
 
+
+                            {/* OTA-ONA */}
                             <div className="parents">
 
-                                <p>SON OF</p>
-
-                                <strong>
-                                    MR & MRS CH. HUSSAINI
-                                </strong>
-
-                                <div className="small-line"></div>
-
-                                <p>DAUGHTER OF</p>
-
-                                <strong>
-                                    MR & MRS CH. FAROOQI
-                                </strong>
-
+                         <p>With the love and blessings <br/> of their families, they begin a  <br/> beautiful new  chapter together.</p>
                             </div>
 
-cd
+
+                            {/* MATN */}
                             <p className="invitation-text">
                                 Hayotimizning eng go‘zal kunida
                                 <br />
@@ -524,10 +519,10 @@ cd
                                 mamnun bo‘lamiz
                             </p>
 
-                            <div className="invitation-heart">
-                                ♡
-                            </div>
 
+
+
+                            {/* THANKS */}
                             <p className="thanks">
                                 E’tiboringiz va tashrifingiz uchun
                                 <br />
@@ -537,7 +532,6 @@ cd
                         </div>
 
                     </section>
-
                     {/* CALENDAR */}
 
                     <motion.section
@@ -556,7 +550,7 @@ cd
                     >
 
                         <img
-                            src="/map.png"
+                            src="/sada.png"
                             alt=""
                             className="calendar-frame"
                         />

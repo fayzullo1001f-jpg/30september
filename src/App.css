@@ -1,4 +1,11 @@
 /* =========================================================
+   GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Parisienne&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
+
+
+/* =========================================================
    RESET
 ========================================================= */
 
@@ -22,8 +29,11 @@ html {
 body {
     margin: 0;
     min-width: 320px;
+
     overflow-x: hidden;
+
     background: #fff7fa;
+
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -40,7 +50,9 @@ button {
 .app {
     width: 100%;
     min-height: 100vh;
+
     overflow-x: hidden;
+
     background: #fff7fa;
 }
 
@@ -107,6 +119,7 @@ button {
 
     user-select: none;
     pointer-events: none;
+
     -webkit-user-drag: none;
 
     transition:
@@ -138,6 +151,7 @@ button {
     background: transparent;
 
     cursor: pointer;
+
     padding: 0;
 
     -webkit-tap-highlight-color: transparent;
@@ -174,6 +188,7 @@ button {
         filter:
                 brightness(1)
                 saturate(1);
+
         opacity: 1;
     }
 
@@ -181,6 +196,7 @@ button {
         filter:
                 brightness(1.12)
                 saturate(0.98);
+
         opacity: 1;
     }
 
@@ -188,6 +204,7 @@ button {
         filter:
                 brightness(1.45)
                 saturate(0.9);
+
         opacity: 0.96;
     }
 
@@ -195,6 +212,7 @@ button {
         filter:
                 brightness(2.2)
                 saturate(0.65);
+
         opacity: 0.65;
     }
 
@@ -202,13 +220,14 @@ button {
         filter:
                 brightness(3.5)
                 saturate(0.45);
+
         opacity: 0;
     }
 }
 
 
 /* =========================================================
-   NEW OPENING LIGHT SYSTEM
+   OPENING LIGHT SYSTEM
 ========================================================= */
 
 .opening-light-wrapper {
@@ -229,7 +248,6 @@ button {
 
 /* =========================================================
    MAIN LIGHT
-   45% LEFT / 45% TOP
 ========================================================= */
 
 .opening-light {
@@ -371,7 +389,7 @@ button {
 
 
 /* =========================================================
-   INVITATION IMAGE
+   INVITATION SECTION
 ========================================================= */
 
 .invitation {
@@ -400,6 +418,7 @@ button {
     height: auto;
 
     position: relative;
+
     z-index: 1;
 
     object-fit: contain;
@@ -432,42 +451,69 @@ button {
     color: #b85d78;
 
     font-family:
-            "Playfair Display",
+            "Cormorant Garamond",
             serif;
 }
 
 
 /* =========================================================
    NAMES
+   PARISIENNE — GAJAMDOR FONT
 ========================================================= */
 
 .groom-name,
 .bride-name {
     position: absolute;
 
+    left: 0;
+
     width: 100%;
 
     margin: 0;
+    padding: 0;
 
     font-family:
-            "Great Vibes",
+            "Parisienne",
             cursive;
 
     font-weight: 400;
 
+    line-height: 1;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    text-transform: none;
+
     color: #b95572;
 
-    line-height: 1;
+    letter-spacing: 1px;
+
+    text-shadow:
+            0 1px 1px rgba(70, 45, 20, 0.08);
 }
+
+
+/* =========================================================
+   GROOM
+========================================================= */
 
 .groom-name {
     top: 20%;
+
     font-size: 47px;
 }
 
+
+/* =========================================================
+   BRIDE
+========================================================= */
+
 .bride-name {
     top: 33%;
-    font-size: 36px;
+
+    font-size: 47px;
 }
 
 
@@ -480,6 +526,8 @@ button {
 
     top: 28%;
 
+    left: 0;
+
     width: 100%;
 
     display: flex;
@@ -490,13 +538,26 @@ button {
     gap: 12px;
 }
 
+
+/* =========================================================
+   AND LINES
+========================================================= */
+
 .and span {
     position: relative;
 
-    width: 40px;
+    display: block;
+
+    width: 42px;
     height: 1px;
 
-    background: #d99aaa;
+    background:
+            linear-gradient(
+                    90deg,
+                    transparent 0%,
+                    #b58a52 50%,
+                    transparent 100%
+            );
 }
 
 .and span::after {
@@ -504,11 +565,13 @@ button {
 
     position: absolute;
 
-    top: -8px;
+    top: -7px;
 
-    color: #c47a8d;
+    font-family: serif;
 
     font-size: 9px;
+
+    color: #a97a3e;
 }
 
 .and span:first-child::after {
@@ -519,16 +582,25 @@ button {
     left: -3px;
 }
 
+
+/* =========================================================
+   AND TEXT
+========================================================= */
+
 .and em {
     font-family:
             "Great Vibes",
             cursive;
 
-    font-size: 25px;
+    font-size: 27px;
 
     font-style: normal;
 
-    color: #bd657d;
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #9b713b;
 }
 
 
@@ -539,42 +611,98 @@ button {
 .parents {
     position: absolute;
 
-    top: 40%;
+    top: 43%;
+
+    left: 0;
 
     width: 100%;
 
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
     font-family:
-            "Playfair Display",
+            "Cormorant Garamond",
             serif;
 
-    color: #a95c70;
+    color: #79582f;
 }
+
+
+/* =========================================================
+   SON / DAUGHTER
+========================================================= */
 
 .parents p {
     margin: 0 0 5px;
 
-    font-size: 9px;
+    padding: 0;
 
-    letter-spacing: 1.5px;
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    color: #9a7545;
+
+    text-transform: uppercase;
 }
+
+
+/* =========================================================
+   PARENTS NAMES
+========================================================= */
 
 .parents strong {
     display: block;
 
-    font-size: 9px;
+    margin: 0;
 
-    font-weight: 500;
+    font-family:
+            "Cormorant Garamond",
+            serif;
 
-    letter-spacing: 1px;
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    letter-spacing: 1.3px;
+
+    color: #704f29;
+
+    text-transform: uppercase;
 }
 
+
+/* =========================================================
+   SMALL LINE
+========================================================= */
+
 .small-line {
-    width: 90px;
+    width: 70px;
+
     height: 1px;
 
-    margin: 14px auto;
+    margin: 13px auto;
 
-    background: #d8a0ad;
+    background:
+            linear-gradient(
+                    90deg,
+                    transparent 0%,
+                    #b58a52 50%,
+                    transparent 100%
+            );
 }
 
 
@@ -586,6 +714,8 @@ button {
     position: absolute;
 
     top: 54%;
+
+    left: 0;
 
     width: 100%;
 
@@ -610,22 +740,38 @@ button {
 .invitation-text {
     position: absolute;
 
-    top: 59%;
+    top: 52%;
+
+    left: 0;
 
     width: 100%;
 
     margin: 0;
 
-    font-size: 11px;
+    padding: 0 22px;
 
-    line-height: 1.7;
+    box-sizing: border-box;
 
-    color: #b45f73;
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    line-height: 1.65;
+
+    letter-spacing: 0.4px;
+
+    text-align: center;
+
+    color: #795a35;
 }
 
 
 /* =========================================================
-   INVITATION HEART
+   HEART
 ========================================================= */
 
 .invitation-heart {
@@ -639,20 +785,51 @@ button {
     width: 48px;
     height: 48px;
 
-    border: 1px solid #d99baa;
-
-    border-radius: 50%;
-
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    font-size: 30px;
+    box-sizing: border-box;
 
-    color: #bd617a;
+    border:
+            1px solid
+            rgba(170, 125, 65, 0.65);
 
-    font-family: serif;
+    border-radius: 50%;
+
+    background:
+            rgba(255, 250, 240, 0.35);
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 31px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #9b713b;
+
+    box-shadow:
+            0 4px 14px rgba(100, 65, 25, 0.08),
+            inset 0 1px 4px rgba(255, 255, 255, 0.6);
+
+    transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+}
+
+.invitation-heart:hover {
+    transform:
+            translateX(-50%)
+            scale(1.05);
+
+    box-shadow:
+            0 6px 18px rgba(100, 65, 25, 0.12),
+            inset 0 1px 4px rgba(255, 255, 255, 0.7);
 }
 
 
@@ -663,21 +840,33 @@ button {
 .thanks {
     position: absolute;
 
-    top: 78%;
+    top: 71%;
+
+    left: 0;
 
     width: 100%;
 
     margin: 0;
 
-    font-family:
-            "Great Vibes",
-            cursive;
+    padding: 0 20px;
 
-    font-size: 19px;
+    box-sizing: border-box;
+
+    font-family:
+            "Cormorant Garamond",
+            serif;
+
+    font-size: 15px;
+
+    font-weight: 400;
 
     line-height: 1.5;
 
-    color: #b45d76;
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    color: #80613c;
 }
 
 
@@ -879,6 +1068,7 @@ button {
     box-shadow:
             0 6px 16px
             rgba(163, 93, 119, 0.08),
+
             inset 0 1px 0
             rgba(255, 255, 255, 0.95);
 
@@ -1049,7 +1239,8 @@ button {
 
     width: 1px;
 
-    transform: translateX(-50%);
+    transform:
+            translateX(-50%);
 
     background:
             linear-gradient(
@@ -1497,13 +1688,13 @@ button {
 
 .footer-top {
     margin:
-            35% 0 0;
+            53% 0 0;
 
     font-family:
             "Cormorant Garamond",
             serif;
 
-    font-size: 9px;
+    font-size: 10px;
 
     font-weight: 300;
 
@@ -1519,7 +1710,7 @@ button {
             7px 0 0;
 
     font-family:
-            "Great Vibes",
+            "Parisienne",
             cursive;
 
     font-size: 37px;
@@ -1610,9 +1801,8 @@ button {
 
     color: #ad6a7d;
 }
+
 .footer-message1 {
-
-
     font-family:
             "Cormorant Garamond",
             serif;
@@ -1633,7 +1823,6 @@ button {
 .footer-heart {
     width: 58px;
     height: 58px;
-
 
     display: flex;
 
@@ -1790,6 +1979,7 @@ button {
         box-shadow:
                 0 6px 20px
                 rgba(163, 93, 119, 0.20),
+
                 0 0 0 0
                 rgba(184, 102, 126, 0.25);
     }
@@ -1798,6 +1988,7 @@ button {
         box-shadow:
                 0 6px 20px
                 rgba(163, 93, 119, 0.20),
+
                 0 0 0 8px
                 rgba(184, 102, 126, 0.08);
     }
@@ -1806,6 +1997,7 @@ button {
         box-shadow:
                 0 6px 20px
                 rgba(163, 93, 119, 0.20),
+
                 0 0 0 0
                 rgba(184, 102, 126, 0.25);
     }
@@ -1896,7 +2088,7 @@ button {
     margin: 0 0 7px;
 
     font-family:
-            "Great Vibes",
+            "Parisienne",
             cursive;
 
     font-size: 30px;
@@ -1947,6 +2139,11 @@ button {
             Georgia,
             serif !important;
 }
+
+
+/* =========================================================
+   CALENDAR CARD
+========================================================= */
 
 .calendar_card {
     position: relative;
@@ -2008,6 +2205,11 @@ button {
 
     color: #b46d7e;
 }
+
+
+/* =========================================================
+   CALENDAR GRID
+========================================================= */
 
 .calendar {
     width: 100%;
@@ -2131,7 +2333,7 @@ button {
 
 
 /* =========================================================
-   MOBILE
+   MOBILE — 420px
 ========================================================= */
 
 @media (max-width: 420px) {
@@ -2151,12 +2353,121 @@ button {
         height: 42px;
     }
 
+
+    /* INVITATION */
+
+    .groom-name {
+        top: 20%;
+
+        font-size: 45px;
+
+        letter-spacing: 1px;
+    }
+
+    .bride-name {
+        top: 33%;
+
+        font-size: 45px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .and {
+        top: 28%;
+
+        gap: 10px;
+    }
+
+    .and span {
+        width: 38px;
+    }
+
+    .and em {
+        font-size: 25px;
+    }
+
+
+    .parents {
+        top: 40%;
+
+        padding:
+                0 10px;
+    }
+
+    .parents p {
+        font-size: 9px;
+
+        letter-spacing: 1.6px;
+
+        margin-bottom: 4px;
+    }
+
+    .parents strong {
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .small-line {
+        width: 60px;
+
+        margin:
+                11px auto;
+    }
+
+
+    .dear {
+        top: 54%;
+
+        font-size: 24px;
+    }
+
+
+    .invitation-text {
+        top: 59%;
+
+        padding:
+                0 18px;
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    .invitation-heart {
+        top: 70%;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 29px;
+    }
+
+
+    .thanks {
+        top: 78%;
+
+        padding:
+                0 15px;
+
+        font-size: 14px;
+
+        letter-spacing: 0.7px;
+    }
+
+
+    /* CALENDAR */
+
     .italian_calendar {
         min-height: 720px;
     }
 
     .calendar-frame {
         object-fit: cover;
+
         object-position: center;
     }
 
@@ -2198,16 +2509,19 @@ button {
 
     .calendar {
         column-gap: 1px;
+
         row-gap: 4px;
     }
 
     .day_name {
         height: 22px;
+
         font-size: 7px;
     }
 
     .day {
         height: 29px;
+
         font-size: 11px;
     }
 
@@ -2219,25 +2533,82 @@ button {
 
 
 /* =========================================================
-   VERY SMALL PHONES
+   SMALL PHONES — 400px
 ========================================================= */
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
 
-    .opening-light {
-        width: 90px;
-        height: 90px;
+    .groom-name {
+        top: 20%;
+
+        font-size: 42px;
+
+        letter-spacing: 0.5px;
     }
 
-    .opening-glow {
-        width: 140px;
-        height: 140px;
+    .bride-name {
+        top: 33%;
+
+        font-size: 42px;
+
+        letter-spacing: 0.5px;
     }
 
-    .light-core {
-        width: 38px;
-        height: 38px;
+    .and {
+        top: 28%;
+
+        gap: 8px;
     }
+
+    .and span {
+        width: 34px;
+    }
+
+    .and em {
+        font-size: 23px;
+    }
+
+    .parents {
+        top: 40%;
+    }
+
+    .parents p {
+        font-size: 8px;
+
+        letter-spacing: 1.4px;
+    }
+
+    .parents strong {
+        font-size: 8px;
+
+        letter-spacing: 0.8px;
+    }
+
+    .invitation-text {
+        top: 59%;
+
+        font-size: 12px;
+
+        line-height: 1.55;
+    }
+
+    .invitation-heart {
+        top: 70%;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 27px;
+    }
+
+    .thanks {
+        top: 78%;
+
+        font-size: 13px;
+    }
+
+
+    /* CALENDAR */
 
     .italian_calendar {
         min-height: 680px;
@@ -2275,11 +2646,160 @@ button {
 
     .day {
         height: 27px;
+
         font-size: 10px;
     }
 
     .day_name {
         height: 21px;
+
+        font-size: 6.5px;
+    }
+
+    .active_day {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .groom-name {
+        top: 20%;
+
+        font-size: 39px;
+
+        letter-spacing: 0;
+    }
+
+    .bride-name {
+        top: 33%;
+
+        font-size: 39px;
+
+        letter-spacing: 0;
+    }
+
+    .and {
+        top: 28%;
+
+        gap: 7px;
+    }
+
+    .and span {
+        width: 30px;
+    }
+
+    .and em {
+        font-size: 21px;
+    }
+
+    .parents {
+        top: 40%;
+    }
+
+    .parents p {
+        font-size: 7.5px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .parents strong {
+        font-size: 7.5px;
+
+        letter-spacing: 0.6px;
+    }
+
+    .small-line {
+        width: 50px;
+
+        margin:
+                9px auto;
+    }
+
+    .dear {
+        font-size: 22px;
+    }
+
+    .invitation-text {
+        top: 59%;
+
+        padding:
+                0 12px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+    .invitation-heart {
+        top: 70%;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 25px;
+    }
+
+    .thanks {
+        top: 78%;
+
+        font-size: 12px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    /* CALENDAR */
+
+    .italian_calendar {
+        min-height: 680px;
+    }
+
+    .calendar_overlay {
+        min-height: 680px;
+
+        padding:
+                105px 23px 95px;
+    }
+
+    .calendar_title {
+        font-size: 25px;
+    }
+
+    .calendar_overlay > h2 {
+        font-size: 14px;
+
+        letter-spacing: 1.4px;
+    }
+
+    .calendar_card {
+        max-width: 275px;
+
+        padding:
+                18px 10px 17px;
+    }
+
+    .month {
+        font-size: 16px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .day {
+        height: 27px;
+
+        font-size: 10px;
+    }
+
+    .day_name {
+        height: 21px;
+
         font-size: 6.5px;
     }
 
