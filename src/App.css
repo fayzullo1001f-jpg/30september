@@ -29,9 +29,7 @@ html {
 body {
     margin: 0;
     min-width: 320px;
-
     overflow-x: hidden;
-
     background: #fff7fa;
 
     -webkit-font-smoothing: antialiased;
@@ -458,7 +456,6 @@ button {
 
 /* =========================================================
    NAMES
-   PARISIENNE — GAJAMDOR FONT
 ========================================================= */
 
 .groom-name,
@@ -501,7 +498,6 @@ button {
 
 .groom-name {
     top: 20%;
-
     font-size: 47px;
 }
 
@@ -512,7 +508,6 @@ button {
 
 .bride-name {
     top: 33%;
-
     font-size: 47px;
 }
 
@@ -605,7 +600,7 @@ button {
 
 
 /* =========================================================
-   PARENTS
+   ENGLISH TEXT
 ========================================================= */
 
 .parents {
@@ -632,7 +627,7 @@ button {
 
 
 /* =========================================================
-   SON / DAUGHTER
+   ENGLISH TEXT PARAGRAPH
 ========================================================= */
 
 .parents p {
@@ -659,7 +654,7 @@ button {
 
 
 /* =========================================================
-   PARENTS NAMES
+   ENGLISH TEXT STRONG
 ========================================================= */
 
 .parents strong {
@@ -2186,6 +2181,11 @@ button {
     backdrop-filter: blur(2px);
 }
 
+
+/* =========================================================
+   MONTH
+========================================================= */
+
 .month {
     margin:
             0 0 16px;
@@ -2388,8 +2388,10 @@ button {
     }
 
 
+    /* FIXED ENGLISH TEXT POSITION */
+
     .parents {
-        top: 40%;
+        top: 43%;
 
         padding:
                 0 10px;
@@ -2401,12 +2403,16 @@ button {
         letter-spacing: 1.6px;
 
         margin-bottom: 4px;
+
+        line-height: 1.25;
     }
 
     .parents strong {
         font-size: 9px;
 
         letter-spacing: 1px;
+
+        line-height: 1.25;
     }
 
 
@@ -2568,20 +2574,26 @@ button {
         font-size: 23px;
     }
 
+    /* FIX */
+
     .parents {
-        top: 40%;
+        top: 43%;
     }
 
     .parents p {
         font-size: 8px;
 
         letter-spacing: 1.4px;
+
+        line-height: 1.25;
     }
 
     .parents strong {
         font-size: 8px;
 
         letter-spacing: 0.8px;
+
+        line-height: 1.25;
     }
 
     .invitation-text {
@@ -2699,20 +2711,26 @@ button {
         font-size: 21px;
     }
 
+    /* FIX */
+
     .parents {
-        top: 40%;
+        top: 43%;
     }
 
     .parents p {
         font-size: 7.5px;
 
         letter-spacing: 1.2px;
+
+        line-height: 1.25;
     }
 
     .parents strong {
         font-size: 7.5px;
 
         letter-spacing: 0.6px;
+
+        line-height: 1.25;
     }
 
     .small-line {
