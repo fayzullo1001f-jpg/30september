@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import music from "./music/asad.mp3";
+import music from "./music/voyah.mp3";
 import "./App.css";
 
 // =========================================================
@@ -42,8 +42,6 @@ function App() {
     // =====================================================
     // COUNTDOWN
     // =====================================================
-
-    const [activeBoxes, setActiveBoxes] = useState([]);
 
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -130,6 +128,8 @@ function App() {
     // COUNTDOWN BOX
     // =====================================================
 
+    const [activeBoxes, setActiveBoxes] = useState([]);
+
     const handleBoxClick = (type) => {
         setActiveBoxes((prev) => {
             if (prev.includes(type)) {
@@ -158,6 +158,7 @@ function App() {
                 whileTap={{ scale: 0.97 }}
             >
                 <div className="date-box">
+
                     <div className="date-icon">
                         {icon}
                     </div>
@@ -171,10 +172,9 @@ function App() {
                             isActive ? "show" : ""
                         }`}
                     >
-                        {isActive
-                            ? value
-                            : "• • •"}
+                        {isActive ? value : "• • •"}
                     </div>
+
                 </div>
             </motion.button>
         );
@@ -261,13 +261,14 @@ function App() {
                         </div>
 
                         {/* =================================================
-                            YANGI OPENING LIGHT
+                            OPENING LIGHT
                         ================================================= */}
 
                         {opening && (
                             <div className="opening-light-wrapper">
 
                                 {/* Tashqi katta nur */}
+
                                 <motion.div
                                     className="opening-light"
                                     initial={{
@@ -309,6 +310,7 @@ function App() {
                                 />
 
                                 {/* Ikkinchi yumshoq glow */}
+
                                 <motion.div
                                     className="opening-glow"
                                     initial={{
@@ -336,6 +338,7 @@ function App() {
                                 />
 
                                 {/* Markaziy oq yadro */}
+
                                 <motion.div
                                     className="light-core"
                                     initial={{
@@ -387,7 +390,9 @@ function App() {
                     transition={{ duration: 0.5 }}
                 >
 
-                    {/* MAIN INVITATION IMAGE */}
+                    {/* =================================================
+                        MAIN INVITATION IMAGE
+                    ================================================= */}
 
                     <section className="invitation">
 
@@ -399,7 +404,9 @@ function App() {
 
                     </section>
 
-                    {/* DATE + COUNTDOWN */}
+                    {/* =================================================
+                        DATE + COUNTDOWN
+                    ================================================= */}
 
                     <section className="date-section">
 
@@ -424,7 +431,7 @@ function App() {
                         </div>
 
                         <p className="date-caption">
-                            To‘yigacha vaqt qolgan:
+                            To‘ygacha:
                         </p>
 
                         <div className="date-boxes">
@@ -471,7 +478,9 @@ function App() {
 
                     </section>
 
-                    {/* NAMES */}
+                    {/* =================================================
+                        NAMES
+                    ================================================= */}
 
                     <section className="invitation">
 
@@ -484,55 +493,81 @@ function App() {
                         <div className="invitation-content">
 
                             {/* KUYOV */}
+
                             <h1 className="groom-name">
-                                <span className="first-letter">M</span>ubiyn
+                                <span className="first-letter">
+                                    M
+                                </span>
+                                ubiyn
                             </h1>
 
                             {/* AND */}
+
                             <div className="and">
+
                                 <span></span>
 
                                 <em>and</em>
 
                                 <span></span>
+
                             </div>
 
                             {/* KELIN */}
+
                             <h1 className="bride-name">
-                                <span className="first-letter">A</span>ziza
+                                <span className="first-letter">
+                                    A
+                                </span>
+                                ziza
                             </h1>
 
-
                             {/* OTA-ONA */}
+
                             <div className="parents">
 
-                         <p>With the love and blessings <br/> of their families, they begin a  <br/> beautiful new  chapter together.</p>
+                                <p>
+                                    With the love and blessings
+                                    <br />
+                                    of their families, they begin a
+                                    <br />
+                                    beautiful new chapter together.
+                                </p>
+
                             </div>
 
-
                             {/* MATN */}
+
                             <p className="invitation-text">
+
                                 Hayotimizning eng go‘zal kunida
                                 <br />
+
                                 sizni yonimizda ko‘rishdan
                                 <br />
+
                                 mamnun bo‘lamiz
+
                             </p>
 
-
-
-
                             {/* THANKS */}
+
                             <p className="thanks">
+
                                 E’tiboringiz va tashrifingiz uchun
                                 <br />
+
                                 tashakkur
+
                             </p>
 
                         </div>
 
                     </section>
-                    {/* CALENDAR */}
+
+                    {/* =================================================
+                        CALENDAR
+                    ================================================= */}
 
                     <motion.section
                         className="section italian_calendar"
@@ -609,6 +644,7 @@ function App() {
                                                             : "day"
                                                     }
                                                 >
+
                                                     {day}
 
                                                     {day === 30 && (
@@ -616,6 +652,7 @@ function App() {
                                                             ♥
                                                         </span>
                                                     )}
+
                                                 </div>
                                             );
                                         }
@@ -626,118 +663,119 @@ function App() {
                             </div>
 
                             <h2 className="jas">
+
                                 Bu biz uchun muhim sana
                                 <br />
+
                                 va ushbu kunda sizni
                                 <br />
+
                                 kutib qolamiz!!!
+
                             </h2>
 
                         </div>
 
                     </motion.section>
 
-                    {/* PROGRAM */}
+                    {/* =================================================
+                        NEW EUROPEAN PROGRAM
+                    ================================================= */}
 
-                    <section className="program-section">
+                    <motion.section
+                        className="program-section"
+                        initial={{
+                            opacity: 0,
+                            y: 40,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        viewport={{
+                            once: true,
+                        }}
+                    >
 
-                        <div className="timeline">
+                        <div className="program-elegant">
 
-                            <div className="timeline-item left">
+                            {/* TITLE */}
 
-                                <img
-                                    src="/arch-transparent.png"
-                                    alt=""
-                                    className="program-arch"
-                                />
+                            <div className="program-small-title">
+                                OUR STORY
+                            </div>
 
-                                <div className="program-info">
+                            {/* INFINITY */}
 
-                                    <div className="program-time">
-                                        6:00 pm
-                                    </div>
+                            <div className="program-infinity">
+                                ∞
+                            </div>
 
-                                    <h3>
-                                        Guest Arrival and
-                                        <br />
-                                        Welcome Drinks
-                                    </h3>
+                            {/* LINE */}
 
-                                </div>
+                            <div className="program-line">
+
+                                <span></span>
+
+                                <b>✦</b>
+
+                                <span></span>
 
                             </div>
 
-                            <div className="timeline-item right">
+                            {/* MAIN TITLE */}
 
-                                <div className="program-info">
+                            <h2 className="program-main-title">
+                                A day to remember
+                            </h2>
 
-                                    <div className="program-time">
-                                        6:30 pm
-                                    </div>
+                            {/* DESCRIPTION */}
 
-                                    <h3>
-                                        Bride Entrance
-                                    </h3>
+                            <p className="program-description">
+                                Two hearts, one beautiful beginning
+                            </p>
 
-                                </div>
+                            {/* DATE */}
 
-                                <img
-                                    src="/arch-transparent.png"
-                                    alt=""
-                                    className="program-arch"
-                                />
+                            <div className="program-date">
 
-                            </div>
+                                <span>30</span>
 
-                            <div className="timeline-item left">
+                                <i>•</i>
 
-                                <img
-                                    src="/arch-transparent.png"
-                                    alt=""
-                                    className="program-arch"
-                                />
+                                <span>09</span>
 
-                                <div className="program-info">
+                                <i>•</i>
 
-                                    <div className="program-time">
-                                        7:00 pm
-                                    </div>
-
-                                    <h3>
-                                        Nikah Ceremony
-                                    </h3>
-
-                                </div>
+                                <span>2026</span>
 
                             </div>
 
-                            <div className="timeline-item right">
+                            {/* BOTTOM */}
 
-                                <div className="program-info">
+                            <div className="program-bottom">
 
-                                    <div className="program-time">
-                                        7:30 pm
-                                    </div>
+                                <span>
+                                    FOREVER
+                                </span>
 
-                                    <h3>
-                                        Salat al-Isha
-                                    </h3>
+                                <span className="program-heart">
+                                    ♡
+                                </span>
 
-                                </div>
-
-                                <img
-                                    src="/arch-transparent.png"
-                                    alt=""
-                                    className="program-arch"
-                                />
+                                <span>
+                                    TOGETHER
+                                </span>
 
                             </div>
 
                         </div>
 
-                    </section>
+                    </motion.section>
 
-                    {/* LOCATION */}
+                    {/* =================================================
+                        LOCATION
+                    ================================================= */}
 
                     <section className="location-section">
 
@@ -768,15 +806,22 @@ function App() {
                                 </p>
 
                                 <div className="location-divider">
+
                                     <span></span>
+
                                     <b>✦</b>
+
                                     <span></span>
+
                                 </div>
 
                                 <p className="location-text">
+
                                     Sizni baxtli kunimizni birga
                                     <br />
+
                                     nishonlash uchun taklif qilamiz
+
                                 </p>
 
                                 <div className="location-pin">
@@ -790,9 +835,12 @@ function App() {
                                 </div>
 
                                 <p className="location-address">
+
                                     Versal to‘yxonasi
                                     <br />
+
                                     Toshkent shahri
+
                                 </p>
 
                                 <a
@@ -814,7 +862,9 @@ function App() {
 
                     </section>
 
-                    {/* FOOTER */}
+                    {/* =================================================
+                        FOOTER
+                    ================================================= */}
 
                     <section className="footer-section">
 
@@ -831,32 +881,60 @@ function App() {
                             </p>
 
                             <h2 className="footer-names">
+
                                 Mubiyn
-                                <span>&amp;</span>
+
+                                <span>
+                                    &amp;
+                                </span>
+
                                 Aziza
+
                             </h2>
 
                             <div className="footer-date">
 
-                                <span>30</span>
-                                <b>•</b>
-                                <span>09</span>
-                                <b>•</b>
-                                <span>2026</span>
+                                <span>
+                                    30
+                                </span>
+
+                                <b>
+                                    •
+                                </b>
+
+                                <span>
+                                    09
+                                </span>
+
+                                <b>
+                                    •
+                                </b>
+
+                                <span>
+                                    2026
+                                </span>
 
                             </div>
 
                             <p className="footer-message">
+
                                 Hayotimizning eng go‘zal kunida
                                 <br />
+
                                 sizni yonimizda ko‘rishdan
                                 <br />
+
                                 mamnun bo‘lamiz.
+
                             </p>
+
                             <p className="footer-message1">
+
                                 Hurmat va ehtirom ila
                                 <br />
-                             Melikulovlar oilasi!
+
+                                Melikulovlar oilasi!
+
                             </p>
 
                             <div className="footer-heart">
